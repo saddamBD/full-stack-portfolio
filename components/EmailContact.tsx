@@ -8,10 +8,10 @@ function EmailContact() {
     <section>
       <h2 className="text-3xl font-semibold mb-4">Contact Me</h2>
       <p className="text-lg text-muted-foreground mb-4">
-        Ia m always open to new opportunities and collaborations. Feel free to
+        Iam always open to new opportunities and collaborations. Feel free to
         reach out!
       </p>
-      <Link href="mailto:john@example.com">
+      <Link href="mailto:saddam.doict@gmail.com">
         <Button>
           <Mail className="mr-2 h-4 w-4" /> Contact Me
         </Button>
