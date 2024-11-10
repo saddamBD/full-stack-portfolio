@@ -3,6 +3,7 @@ import CustomHeader from "@/components/CustomHeader";
 import AboutMe from "@/components/AboutMe";
 import Skill from "@/components/Skill";
 import ProjectsList from "@/components/ProjectsList";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Saddam Hossain - Full Stack Developer",
@@ -18,6 +19,7 @@ export default function Home() {
         <AboutMe />
         <Skill />
         <ProjectsList />
+        <Footer />
       </div>
     </main>
   );
