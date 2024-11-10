@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import CustomHeader from "@/components/CustomHeader";
 import AboutMe from "@/components/AboutMe";
+import Skill from "@/components/Skill";
 
 export const metadata: Metadata = {
   title: "Saddam Hossain - Full Stack Developer",
@@ -14,6 +15,7 @@ export default function Home() {
       <div className="container mx-auto px-4 py-16">
         <CustomHeader />
         <AboutMe />
+        <Skill />
       </div>
     </main>
   );
