@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Download, Github, Linkedin, Mail } from "lucide-react";
 
 function CustomHeader() {
   return (
@@ -44,6 +44,16 @@ function CustomHeader() {
             <Button variant="outline" size="icon">
               <Mail className="h-5 w-5" />
               <span className="sr-only">Email</span>
+            </Button>
+          </Link>
+          <Link
+            href="/sample_developer_resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="outline">
+              <Download className="h-5 w-5 mr-2" />
+              Download CV
             </Button>
           </Link>
         </div>
