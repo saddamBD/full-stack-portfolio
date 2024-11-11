@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -5,8 +6,59 @@ import { Button } from "@/components/ui/button";
 import { Download, Github, Linkedin, Mail } from "lucide-react";
 
 function CustomHeader() {
+  // const aboutRef = useRef<HTMLElement>(null);
+
+  // useEffect(() => {
+  //   document.documentElement.style.scrollBehavior = "smooth";
+  //   return () => {
+  //     document.documentElement.style.scrollBehavior = "auto";
+  //   };
+  // }, []);
+
+  // const scrollToAbout = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  //   e.preventDefault();
+  //   aboutRef.current?.scrollIntoView({ behavior: "smooth" });
+  // };
   return (
     <div>
+      {/* <header className="fixed top-0 left-0 right-0 bg-primary text-primary-foreground py-4 z-10">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col items-center md:flex-row md:justify-between">
+            <div className="mb-4 md:mb-0">
+              <h1 className="text-3xl font-bold">John Doe</h1>
+              <p className="text-xl">Full Stack Developer</p>
+            </div>
+            <nav>
+              <ul className="flex space-x-4">
+                <li>
+                  <a
+                    href="#about"
+                    onClick={scrollToAbout}
+                    className="hover:underline"
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#skills" className="hover:underline">
+                    Skills
+                  </a>
+                </li>
+                <li>
+                  <a href="#projects" className="hover:underline">
+                    Projects
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" className="hover:underline">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header> */}
       <header className="text-center mb-16">
         <Image
           src="/images/saddam.PNG"

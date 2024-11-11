@@ -20,44 +20,85 @@ function ProjectsList() {
             image: "/images/ecommerce.PNG",
           },
           {
-            title: "Task Management App",
+            title: "Book Store",
             description:
-              "A real-time task management application using React, Node.js, and Socket.io.",
-            liveLink: "https://example.com/project2",
-            githubLink: "https://github.com/yourusername/project2",
-            image: "/images/ecommerce.PNG",
+              "A real-time Book Store application using React, Node.js.",
+            liveLink: "https://book-list-snowy-one.vercel.app/",
+            githubLink: "https://github.com/saddamBD/book-list",
+            image: "/images/project2.PNG",
           },
           {
-            title: "Weather Dashboard",
-            description:
-              "A weather dashboard that displays current and forecasted weather using a third-party API.",
-            liveLink: "https://example.com/project3",
-            githubLink: "https://github.com/yourusername/project3",
-            image: "/images/ecommerce.PNG",
+            title: "Iphone Site",
+            description: "A Stunning Responsive Website built with Next.js.",
+            liveLink: "https://iphone-site-xi.vercel.app/",
+            githubLink: "https://github.com/saddamBD/iphone-site",
+            image: "/images/project3.PNG",
           },
           {
-            title: "Blog Platform",
+            title: "Food Corner",
             description:
-              "A full stack blog platform with user authentication and markdown support.",
-            liveLink: "https://example.com/project4",
-            githubLink: "https://github.com/yourusername/project4",
-            image: "/images/ecommerce.PNG",
+              "A Food Corner website built react that fetches data from an API.",
+            liveLink: "https://food-corner-lemon.vercel.app/",
+            githubLink: "https://github.com/saddamBD/food-corner",
+            image: "/images/project4.PNG",
           },
           {
-            title: "Fitness Tracker",
-            description:
-              "A mobile-responsive fitness tracking app with data visualization.",
-            liveLink: "https://example.com/project5",
-            githubLink: "https://github.com/yourusername/project5",
-            image: "/images/ecommerce.PNG",
+            title: "React Admin Dashboard",
+            description: "React Admin Dashboard with react.",
+            liveLink: "https://react-admin-dashboard-ten-kappa.vercel.app/",
+            githubLink: "https://github.com/saddamBD/react-admin-dashboard",
+            image: "/images/project5.PNG",
           },
           {
-            title: "Recipe Finder",
+            title: "Car Show",
             description:
-              "An app that suggests recipes based on ingredients you have at home.",
-            liveLink: "https://example.com/project6",
-            githubLink: "https://github.com/yourusername/project6",
-            image: "/images/ecommerce.PNG",
+              "A car show website built with Next.js that fetches data from an API.",
+            liveLink:
+              "https://car-show-mb17o8t9d-saddambds-projects.vercel.app/",
+            githubLink: "https://github.com/saddamBD/car-show-up",
+            image: "/images/project6.PNG",
+          },
+          {
+            title: "Parallax site",
+            description: "A parallax site built.",
+            liveLink:
+              "https://parallax-responsive-ih8ioeeer-saddambds-projects.vercel.app/",
+            githubLink: "https://github.com/saddamBD/Parallax-responsive-app",
+            image: "/images/project7.PNG",
+          },
+          {
+            title: "Secret Key Matcher",
+            description: "Secret Key Matcher",
+            liveLink:
+              "https://secret-key-matcher-h2p47r8sw-saddambds-projects.vercel.app/",
+            githubLink: "https://github.com/saddamBD/Secret-Key-Matcher",
+            image: "/images/project8.PNG",
+          },
+          {
+            title: "Book store",
+            description: "Book store app that displays different books.",
+            liveLink: "https://stirring-crumble-8a3394.netlify.app/",
+            githubLink: "https://github.com/saddamBD/book-list",
+            image: "/images/project9.PNG",
+          },
+          {
+            title: "Movie Correlation App with Python",
+            description:
+              "In this project we look at what variables effect the gross revenue from movies.",
+            liveLink:
+              "https://github.com/saddamBD/PortfolioProjects/blob/master/Movie%20%20project.ipynb",
+            githubLink:
+              "https://github.com/saddamBD/PortfolioProjects/blob/master/Movie%20%20project.ipynb",
+            image: "/images/project10.PNG",
+          },
+          {
+            title: "House price web scaping",
+            description: "Web Scaping using beautifulSoup python library.",
+            liveLink:
+              "https://github.com/saddamBD/PortfolioProjects/tree/master/house%20price%20web%20scaping",
+            githubLink:
+              "https://github.com/saddamBD/PortfolioProjects/tree/master/house%20price%20web%20scaping",
+            image: "/images/project11.PNG",
           },
         ].map((project, index) => (
           <Card
