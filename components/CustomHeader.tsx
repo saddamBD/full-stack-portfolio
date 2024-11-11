@@ -4,7 +4,12 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Download, Github, Linkedin, Mail } from "lucide-react";
-
+import {
+  Tooltip,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { TooltipContent } from "@radix-ui/react-tooltip";
 function CustomHeader() {
   // const aboutRef = useRef<HTMLElement>(null);
 
@@ -72,32 +77,53 @@ function CustomHeader() {
           Full Stack Developer
         </h2>
         <div className="flex justify-center space-x-4">
-          <Link
-            href="https://github.com/saddamBD"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button variant="outline" size="icon">
-              <Github className="h-5 w-5" />
-              <span className="sr-only">GitHub</span>
-            </Button>
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/saddam-hossain-003609b8/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button variant="outline" size="icon">
-              <Linkedin className="h-5 w-5" />
-              <span className="sr-only">LinkedIn</span>
-            </Button>
-          </Link>
-          <Link href="mailto:saddam.doict@gmail.com">
-            <Button variant="outline" size="icon">
-              <Mail className="h-5 w-5" />
-              <span className="sr-only">Email</span>
-            </Button>
-          </Link>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link
+                  href="https://github.com/saddamBD"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="outline" size="icon">
+                    <Github className="h-5 w-5" />
+                    <span className="sr-only">GitHub</span>
+                  </Button>
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent>Visit my GitHub profile</TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link
+                  href="https://www.linkedin.com/in/saddam-hossain-003609b8/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="outline" size="icon">
+                    <Linkedin className="h-5 w-5" />
+                    <span className="sr-only">LinkedIn</span>
+                  </Button>
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent> Connect on LinkedIn </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link href="mailto:saddam.doict@gmail.com">
+                  <Button variant="outline" size="icon">
+                    <Mail className="h-5 w-5" />
+                    <span className="sr-only">Email</span>
+                  </Button>
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent>Send me an email</TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
           <Link
             href="/sample_developer_resume.pdf"
             target="_blank"
