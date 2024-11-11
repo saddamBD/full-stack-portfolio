@@ -5,7 +5,7 @@ function Skill() {
   return (
     <section className="mb-16">
       <h2 className="text-3xl font-semibold mb-4">Skills</h2>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 ">
         {[
           "React",
           "Next.js",
@@ -23,7 +23,7 @@ function Skill() {
           "convex",
           "sanity CMS",
         ].map((skill) => (
-          <Badge key={skill} variant="secondary">
+          <Badge key={skill} variant="secondary" className="text-2xl">
             {skill}
           </Badge>
         ))}
