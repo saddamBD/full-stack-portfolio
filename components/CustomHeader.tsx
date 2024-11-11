@@ -9,7 +9,7 @@ function CustomHeader() {
     <div>
       <header className="text-center mb-16">
         <Image
-          src="/assets/images/saddam.png"
+          src="/images/saddam.png"
           alt="saddam"
           width={100}
           height={100}

@@ -17,7 +17,7 @@ function ProjectsList() {
               "A full-featured e-commerce platform built with Next.js, Stripe, and MongoDB.",
             liveLink: "https://e-commerce-mern-f1y7.onrender.com/",
             githubLink: "https://e-commerce-mern-f1y7.onrender.com/",
-            image: "/assets/images/ecommerce.png",
+            image: "/images/ecommerce.png",
           },
           {
             title: "Task Management App",
@@ -25,7 +25,7 @@ function ProjectsList() {
               "A real-time task management application using React, Node.js, and Socket.io.",
             liveLink: "https://example.com/project2",
             githubLink: "https://github.com/yourusername/project2",
-            image: "/assets/images/ecommerce.png",
+            image: "/images/ecommerce.png",
           },
           {
             title: "Weather Dashboard",
@@ -33,7 +33,7 @@ function ProjectsList() {
               "A weather dashboard that displays current and forecasted weather using a third-party API.",
             liveLink: "https://example.com/project3",
             githubLink: "https://github.com/yourusername/project3",
-            image: "/assets/images/ecommerce.png",
+            image: "/images/ecommerce.png",
           },
           {
             title: "Blog Platform",
@@ -41,7 +41,7 @@ function ProjectsList() {
               "A full stack blog platform with user authentication and markdown support.",
             liveLink: "https://example.com/project4",
             githubLink: "https://github.com/yourusername/project4",
-            image: "/assets/images/ecommerce.png",
+            image: "/images/ecommerce.png",
           },
           {
             title: "Fitness Tracker",
@@ -49,7 +49,7 @@ function ProjectsList() {
               "A mobile-responsive fitness tracking app with data visualization.",
             liveLink: "https://example.com/project5",
             githubLink: "https://github.com/yourusername/project5",
-            image: "/assets/images/ecommerce.png",
+            image: "/images/ecommerce.png",
           },
           {
             title: "Recipe Finder",
@@ -57,7 +57,7 @@ function ProjectsList() {
               "An app that suggests recipes based on ingredients you have at home.",
             liveLink: "https://example.com/project6",
             githubLink: "https://github.com/yourusername/project6",
-            image: "/assets/images/ecommerce.png",
+            image: "/images/ecommerce.png",
           },
         ].map((project, index) => (
           <Card
