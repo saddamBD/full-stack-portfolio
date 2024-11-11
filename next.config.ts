@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
         search: '',
       },
     ],
+    domains: ['localhost'],
+    unoptimized: process.env.NODE_ENV !== 'production',
   },
 };
 
