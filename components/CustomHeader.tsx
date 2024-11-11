@@ -10,6 +10,37 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { TooltipContent } from "@radix-ui/react-tooltip";
+import { useEffect, useState } from "react";
+
+const AnimatedText = ({
+  text,
+  delay = 0,
+}: {
+  text: string;
+  delay?: number;
+}) => {
+  const [displayedText, setDisplayedText] = useState("");
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      let currentIndex = 0;
+      const intervalId = setInterval(() => {
+        if (currentIndex <= text.length) {
+          setDisplayedText(text.slice(0, currentIndex));
+          currentIndex++;
+        } else {
+          clearInterval(intervalId);
+        }
+      }, 100);
+
+      return () => clearInterval(intervalId);
+    }, delay);
+
+    return () => clearTimeout(timeout);
+  }, [text, delay]);
+
+  return <span>{displayedText}</span>;
+};
 function CustomHeader() {
   // const aboutRef = useRef<HTMLElement>(null);
 
@@ -72,9 +103,11 @@ function CustomHeader() {
           height={100}
           className="rounded-full mx-auto mb-4"
         />
-        <h1 className="text-4xl font-bold mb-2">Saddam Hossain</h1>
-        <h2 className="text-2xl text-muted-foreground mb-4">
-          Full Stack Developer
+        <h1 className="text-5xl font-bold mb-2">
+          <AnimatedText text=" Saddam Hossain" />
+        </h1>
+        <h2 className="text-5xl text-muted-foreground mb-4">
+          <AnimatedText text="Full Stack Developer" />
         </h2>
         <div className="flex justify-center space-x-4">
           <TooltipProvider>

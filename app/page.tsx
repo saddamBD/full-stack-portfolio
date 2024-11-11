@@ -6,6 +6,7 @@ import ProjectsList from "@/components/ProjectsList";
 import Footer from "@/components/Footer";
 //import EmailContact from "@/components/EmailContact";
 import { ModeToggle } from "@/components/mode-toggle";
+
 // import ContactForm from "@/components/contact-form";
 
 export const metadata: Metadata = {
