@@ -4,8 +4,9 @@ import AboutMe from "@/components/AboutMe";
 import Skill from "@/components/Skill";
 import ProjectsList from "@/components/ProjectsList";
 import Footer from "@/components/Footer";
-import EmailContact from "@/components/EmailContact";
+//import EmailContact from "@/components/EmailContact";
 import { ModeToggle } from "@/components/mode-toggle";
+// import ContactForm from "@/components/contact-form";
 
 export const metadata: Metadata = {
   title: "Saddam Hossain - Full Stack Developer",
@@ -24,7 +25,8 @@ export default function Home() {
         <AboutMe />
         <Skill />
         <ProjectsList />
-        <EmailContact />
+        {/* <EmailContact /> */}
+        {/* <ContactForm /> */}
         <Footer />
       </div>
     </main>

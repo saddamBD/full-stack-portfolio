@@ -3,7 +3,7 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
+import { Github, Globe } from "lucide-react";
 
 function ProjectsList() {
   return (
@@ -15,67 +15,104 @@ function ProjectsList() {
             title: "E-commerce Platform",
             description:
               "A full-featured e-commerce platform built with Next.js, Stripe, and MongoDB.",
-            link: "https://e-commerce-mern-f1y7.onrender.com/",
+            liveLink: "https://e-commerce-mern-f1y7.onrender.com/",
+            githubLink: "https://e-commerce-mern-f1y7.onrender.com/",
             image: "/ecommerce.png",
           },
           {
             title: "Task Management App",
             description:
               "A real-time task management application using React, Node.js, and Socket.io.",
-            link: "https://example.com/project2",
+            liveLink: "https://example.com/project2",
+            githubLink: "https://github.com/yourusername/project2",
             image: "/placeholder.svg?height=200&width=300",
           },
           {
             title: "Weather Dashboard",
             description:
               "A weather dashboard that displays current and forecasted weather using a third-party API.",
-            link: "https://example.com/project3",
+            liveLink: "https://example.com/project3",
+            githubLink: "https://github.com/yourusername/project3",
             image: "/placeholder.svg?height=200&width=300",
           },
           {
             title: "Blog Platform",
             description:
               "A full stack blog platform with user authentication and markdown support.",
-            link: "https://example.com/project4",
+            liveLink: "https://example.com/project4",
+            githubLink: "https://github.com/yourusername/project4",
             image: "/placeholder.svg?height=200&width=300",
           },
           {
             title: "Fitness Tracker",
             description:
               "A mobile-responsive fitness tracking app with data visualization.",
-            link: "https://example.com/project5",
+            liveLink: "https://example.com/project5",
+            githubLink: "https://github.com/yourusername/project5",
             image: "/placeholder.svg?height=200&width=300",
           },
           {
             title: "Recipe Finder",
             description:
               "An app that suggests recipes based on ingredients you have at home.",
-            link: "https://example.com/project6",
+            liveLink: "https://example.com/project6",
+            githubLink: "https://github.com/yourusername/project6",
             image: "/placeholder.svg?height=200&width=300",
           },
         ].map((project, index) => (
-          <Card key={index} className="overflow-hidden">
-            <Image
-              src={project.image}
-              alt={project.title}
-              width={300}
-              height={200}
-              className="w-full h-48 object-cover"
-            />
+          <Card
+            key={index}
+            className="overflow-hidden group transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+          >
+            <div className="relative">
+              <Image
+                src={project.image}
+                alt={project.title}
+                width={300}
+                height={200}
+                className="w-full h-48 object-cover"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <Link
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="secondary" size="sm" className="mr-2">
+                    <Globe className="h-4 w-4 mr-2" />
+                    Live Site
+                  </Button>
+                </Link>
+              </div>
+            </div>
             <CardContent className="p-4">
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-muted-foreground mb-4">
                 {project.description}
               </p>
-              <Link
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button variant="outline" className="w-full">
-                  View Project <ExternalLink className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
+              <div className="flex justify-between items-center">
+                <Link
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="outline" size="sm">
+                    <Github className="h-4 w-4 mr-2" />
+                    GitHub
+                  </Button>
+                </Link>
+                <Link
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="lg:hidden"
+                >
+                  <Button variant="outline" size="sm">
+                    <Globe className="h-4 w-4 mr-2" />
+                    Live Site
+                  </Button>
+                </Link>
+              </div>
             </CardContent>
           </Card>
         ))}
