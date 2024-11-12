@@ -23,7 +23,11 @@ function Skill() {
           "convex",
           "sanity CMS",
         ].map((skill) => (
-          <Badge key={skill} variant="secondary" className="text-2xl">
+          <Badge
+            key={skill}
+            variant="secondary"
+            className="text-2xl transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg hover:bg-primary hover:text-primary-foreground cursor-pointer "
+          >
             {skill}
           </Badge>
         ))}
