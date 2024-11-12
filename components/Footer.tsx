@@ -15,7 +15,7 @@ const Footer = () => {
               <TooltipTrigger asChild>
                 <Link href="https://leetcode.com/u/saddam2020/">
                   <Image
-                    src="https://leetcode.com/favicon.ico"
+                    src="/images/leetcode.png"
                     alt="LeetCode"
                     width={40}
                     height={40}

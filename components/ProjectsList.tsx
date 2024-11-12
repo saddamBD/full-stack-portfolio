@@ -98,7 +98,7 @@ function ProjectsList() {
               "https://github.com/saddamBD/PortfolioProjects/tree/master/house%20price%20web%20scaping",
             githubLink:
               "https://github.com/saddamBD/PortfolioProjects/tree/master/house%20price%20web%20scaping",
-            image: "/images/project11.PNG",
+            image: "/images/project11.png",
           },
         ].map((project, index) => (
           <Card
