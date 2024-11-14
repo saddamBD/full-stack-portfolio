@@ -16,7 +16,7 @@ function ProjectsList() {
             description:
               "A full-featured e-commerce platform built with Next.js, Stripe, and MongoDB.",
             liveLink: "https://e-commerce-mern-f1y7.onrender.com/",
-            githubLink: "https://e-commerce-mern-f1y7.onrender.com/",
+            githubLink: "https://github.com/saddamBD/E-Commerce-MERN",
             image: "/images/ecommerce.PNG",
           },
           {
