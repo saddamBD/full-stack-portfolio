@@ -28,6 +28,14 @@ function ProjectsList() {
             image: "/images/project2.PNG",
           },
           {
+            title: "GSAP APP",
+            description: "This is a GSAP app built with react and GSAP.",
+            liveLink:
+              "https://gsap-app-git-main-saddambds-projects.vercel.app/",
+            githubLink: "https://github.com/saddamBD/GSAP-APP",
+            image: "/images/gsap.PNG",
+          },
+          {
             title: "Iphone Site",
             description: "A Stunning Responsive Website built with Next.js.",
             liveLink: "https://iphone-site-xi.vercel.app/",
