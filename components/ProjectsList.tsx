@@ -20,6 +20,33 @@ function ProjectsList() {
             image: "/images/ecommerce.PNG",
           },
           {
+            title: "crypto-dashboard",
+            description:
+              "A full-featured crypto-dashboard platform built with Next.js.",
+            liveLink: "https://crypto-dashboard-iota-neon.vercel.app/",
+            githubLink: "https://github.com/saddamBD/crypto-dashboard",
+            image: "/images/cp.PNG",
+          },
+          {
+            title: "Financial dashboard app",
+            description:
+              "A full-featured Financial dashboard  platform built with Next.js and shadcn.",
+            liveLink:
+              "https://v0-financial-dashboard-nyz3vw.vercel.app/dashboard",
+            githubLink:
+              "https://v0-financial-dashboard-nyz3vw.vercel.app/dashboard",
+            image: "/images/final-dashboard.PNG",
+          },
+          {
+            title: "Documentation Starter app",
+            description:
+              "A Documentation Starter app built with Next.js and shadcn.",
+            liveLink: "https://documentation-starter-black.vercel.app/",
+            githubLink: "https://github.com/saddamBD/documentation-starter",
+            image: "/images/doc.PNG",
+          },
+
+          {
             title: "Book Store",
             description:
               "A real-time Book Store application using React, Node.js.",
